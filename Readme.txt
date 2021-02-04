@@ -1,6 +1,11 @@
-Thanks for downloading this template!
+Authors: Ethan Dillinger, Brandon Barker, Zane Stauffer
 
-Template Name: Gp
-Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-Author: BootstrapMade.com
+Website for the local Alcoholics Anonymous chapter
+
+
+
+
+
+
+
 License: https://bootstrapmade.com/license/
