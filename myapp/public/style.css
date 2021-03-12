@@ -695,7 +695,7 @@ section {
 }
 
 .services .icon-box h4 a:hover {
-  color: #ffc451;
+  color: #fff;
 }
 
 .services .icon-box p {
@@ -706,8 +706,21 @@ section {
 
 .services .icon-box:hover {
   border-color: #fff;
+  background-color: #ffc451;
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   transform: translateY(-10px);
+}
+
+.services .icon-box:hover .icon i {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background: #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 /*--------------------------------------------------------------
