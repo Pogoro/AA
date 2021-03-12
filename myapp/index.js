@@ -8,6 +8,10 @@ app.get("/",function(request,response){
     response.render("home")
 })
 
+app.get("/MeetingReadings.ejs",function(request,response){
+    response.render("MeetingReadings")
+})
+
 app.listen(port, function () {
     console.log("Started application on port %d", + port)
 });
