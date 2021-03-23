@@ -23,6 +23,23 @@ app.get("/MeetingReadings.ejs",function(request,response){
     response.render("MeetingReadings")
 });
 
+app.get("/meetings.ejs",function(request,response){
+    response.render("meetings")
+});
+
+app.get("/bigbook.ejs",function(request,response){
+    response.render("bigbook")
+});
+
+app.get("/stepsTraditions.ejs",function(request,response){
+    response.render("stepsTraditions")
+});
+
+app.get("/service.ejs",function(request,response){
+    response.render("service")
+});
+
+
 app.get("/api/reflection", function(request, response){
     const reflection_url = 'https://www.aa.org/pages/en_US/daily-reflection';
     axios.get(reflection_url).then(res => {
