@@ -409,15 +409,13 @@ h1, h2, h3, h4, h5, h6 {
     margin: auto;
     margin-top: 75px;
     margin-bottom: 15px;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 65px 0px 65px;
     background-color: #F7F7F7;
 }
 
 .about {
-    padding-top: 50px;
-    padding-left: 35px;
-    padding-right: 30px;
-    margin-bottom: -40px;
+    padding: 50px 65px 0px 65px;
+    line-height: 2.5em;
 }
 
 .about .content{
