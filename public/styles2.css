@@ -481,6 +481,16 @@ section {
   color: #151515;
 }
 
+.btn {
+    background-color: #ffc451;
+    border: transparent;
+    margin-bottom: 15px;
+}
+
+.btn:hover {
+    background-color: #ffde9e;
+}
+
 
 /*--------------------------------------------------------------
 # Footer
