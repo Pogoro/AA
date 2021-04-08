@@ -40,10 +40,25 @@ app.get("/service.ejs",function(request,response){
 });
 
 
-app.get("/api/reflection", function(request, response){
+app.get("/reflection", function(request, response){
+    // Returns a json containing the daily reflection
     const reflection_url = 'https://www.aa.org/pages/en_US/daily-reflection';
     axios.get(reflection_url).then(res => {
-        console.log(res);
+        const $ = cheerio.load(res.data);
+        
+        var data_title = $('.daily-reflection-header-title').text();
+        var data_quote = $('.daily-reflection-header-content p').text();
+        var data_citation = $('.daily-reflection-content-title').text();
+        var data_content = $('.daily-reflection-content').text();
+
+        var data = {
+            title: data_title,
+            quote: data_quote,
+            quote_citation: data_citation,
+            content: data_content
+        };
+
+        response.render('reflection', data);
     })
     .catch(e => {
         console.log(e);
