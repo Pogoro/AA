@@ -15,7 +15,7 @@ const db_pass = 'GdFbEF4EQHtatTeO';
 var db_url = `mongodb+srv://node:${db_pass}@cluster0.ienwf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 
 // Routes
-app.get("/home.ejs",function(request,response){
+app.get("/",function(request,response){
     response.render("home")
 });
 
