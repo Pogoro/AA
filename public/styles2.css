@@ -416,6 +416,7 @@ h1, h2, h3, h4, h5, h6 {
 .about {
     padding: 50px 65px 0px 65px;
     line-height: 2.5em;
+    text-align: center;
 }
 
 .about .content{
@@ -427,15 +428,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about:nth-child(even) a {
-    color: white;
+    color: black;
+}
+
+.about:nth-child(odd) a {
+    color: black;
 }
 
 .about:nth-child(even) a:hover {
+    color: white;
+}
+
+.about:nth-child(odd) a:hover {
     color: lightgrey;
 }
 
 .about h3 {
     text-align: center;
+}
+
+.about ul {
+    list-style: none;
 }
 
 /*--------------------------------------------------------------
