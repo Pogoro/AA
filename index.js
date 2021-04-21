@@ -19,23 +19,23 @@ app.get("/",function(request,response){
     response.render("home")
 });
 
-app.get("/MeetingReadings.ejs",function(request,response){
+app.get("/MeetingReadings",function(request,response){
     response.render("MeetingReadings")
 });
 
-app.get("/meetings.ejs",function(request,response){
+app.get("/meetings",function(request,response){
     response.render("meetings")
 });
 
-app.get("/bigbook.ejs",function(request,response){
+app.get("/bigbook",function(request,response){
     response.render("bigbook")
 });
 
-app.get("/stepsTraditions.ejs",function(request,response){
+app.get("/stepsTraditions",function(request,response){
     response.render("stepsTraditions")
 });
 
-app.get("/service.ejs",function(request,response){
+app.get("/service",function(request,response){
     response.render("service")
 });
 
