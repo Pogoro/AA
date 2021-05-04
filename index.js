@@ -3,6 +3,8 @@ const cheerio = require('cheerio');
 const axios = require('axios');
 const mongo = require('mongodb');
 
+const GOOGLE_API_KEY = 'AIzaSyDcDgUu6r5qK9q5VxVbwGaupapvZOdSrkI';
+
 // Express Init
 var app = express();
 const port = process.env.PORT || 3000;
@@ -24,7 +26,9 @@ app.get("/MeetingReadings",function(request,response){
 });
 
 app.get("/meetings",function(request,response){
-    response.render("meetings")
+    response.render("meetings",{
+        key: GOOGLE_API_KEY
+    })
 });
 
 app.get("/bigbook",function(request,response){
@@ -104,7 +108,7 @@ app.get("/data/physical/:day", (request, response) => {
                 header: 'Placeholder Header 2',
                 body_title: 'Placeholder Body Title 2',
                 body_text: 'Location:<br>Day:<br>Meeting:<br>Notes:',
-                location: '214 8th St Columbus GA 31901'
+                location: '700 Front Ave, Columbus, GA 31901'
             }
         ],
         tuesday: [
@@ -142,7 +146,8 @@ app.get("/data/physical/:day", (request, response) => {
         ]
     }
     response.render("meeting_data", {
-        data: placeholder_object[request.params.day]
+        data: placeholder_object[request.params.day],
+        key: GOOGLE_API_KEY
     });
 });
 
