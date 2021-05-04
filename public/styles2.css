@@ -547,6 +547,13 @@ section {
     font-size: 20px;
 }
 
+.meeting_data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
