@@ -39,6 +39,112 @@ app.get("/service",function(request,response){
     response.render("service")
 });
 
+app.get("/data/online/:day", (request, response) => {
+    // Placeholder text
+    var placeholder_object = {
+        monday: [
+            {
+                header: 'Placeholder Header',
+                body_title: 'Placeholder Body Title',
+                body_text: 'Access Code:<br>Password:<br>To Dial in:<br>Dial In Access Code:<br>Dial In Password:'
+            },
+            {
+                header: 'Placeholder Header 2',
+                body_title: 'Placeholder Body Title 2',
+                body_text: 'Access Code:<br>Password:<br>To Dial in:<br>Dial In Access Code:<br>Dial In Password:'
+            }
+        ],
+        tuesday: [
+            {
+                header: 'Placeholder Header',
+                body_title: 'Placeholder Body Title',
+                body_text: 'Access Code:<br>Password:<br>To Dial in:<br>Dial In Access Code:<br>Dial In Password:'
+            }
+        ],
+        wednesday: [
+            {
+                header: 'Placeholder Header',
+                body_title: 'Placeholder Body Title',
+                body_text: 'Access Code:<br>Password:<br>To Dial in:<br>Dial In Access Code:<br>Dial In Password:'
+            }
+        ],
+        thursday: [
+            {
+                header: 'Placeholder Header',
+                body_title: 'Placeholder Body Title',
+                body_text: 'Access Code:<br>Password:<br>To Dial in:<br>Dial In Access Code:<br>Dial In Password:'
+            }
+        ],
+        friday: [
+
+        ],
+        saturday: [
+
+        ],
+        sunday: [
+
+        ]
+    }
+    response.render("online_meeting_data", {
+        data: placeholder_object[request.params.day]
+    });
+});
+
+app.get("/data/physical/:day", (request, response) => {
+    // Placeholder text
+    var placeholder_object = {
+        monday: [
+            {
+                header: 'Placeholder Header',
+                body_title: 'Placeholder Body Title',
+                body_text: 'Location:<br>Day:<br>Meeting:<br>Notes:',
+                location: '214 8th St Columbus GA 31901'
+            },
+            {
+                header: 'Placeholder Header 2',
+                body_title: 'Placeholder Body Title 2',
+                body_text: 'Location:<br>Day:<br>Meeting:<br>Notes:',
+                location: '214 8th St Columbus GA 31901'
+            }
+        ],
+        tuesday: [
+            {
+                header: 'Placeholder Header',
+                body_title: 'Placeholder Body Title',
+                body_text: 'Location:<br>Day:<br>Meeting:<br>Notes:',
+                location: '214 8th St Columbus GA 31901'
+            }
+        ],
+        wednesday: [
+            {
+                header: 'Placeholder Header',
+                body_title: 'Placeholder Body Title',
+                body_text: 'Location:<br>Day:<br>Meeting:<br>Notes:',
+                location: '214 8th St Columbus GA 31901'
+            }
+        ],
+        thursday: [
+            {
+                header: 'Placeholder Header',
+                body_title: 'Placeholder Body Title',
+                body_text: 'Location:<br>Day:<br>Meeting:<br>Notes:',
+                location: '214 8th St Columbus GA 31901'
+            }
+        ],
+        friday: [
+
+        ],
+        saturday: [
+
+        ],
+        sunday: [
+
+        ]
+    }
+    response.render("meeting_data", {
+        data: placeholder_object[request.params.day]
+    });
+});
 
 app.get("/reflection", function(request, response){
     // Returns a json containing the daily reflection

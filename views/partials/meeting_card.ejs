@@ -1,0 +1,18 @@
+<% if(data.length === 0){ %>
+    <div class="card col-lg-4 col-md-6" id="mt-card-0">
+        <h5 class="card-header">No Meetings</h5>
+        <div class="card-body">
+            <h5 class="card-title">There are no meetings scheduled for this day.</h5>
+        </div>
+    </div>
+<%} else{ %>
+<% for(var i = 0; i < data.length; i++){ %>
+    <div class="card col-lg-4 col-md-6" id="mt-card-0">
+        <h5 class="card-header"><%- data[i].header %></h5>
+        <div class="card-body">
+            <h5 class="card-title"><%- data[i].body_title %></h5>
+            <p class="card-text"><%- data[i].body_text %></p>
+        </div>
+        <a href="<%- data[i].location %>" class="btn btn-primary btn-padding-2 map-button" target="_blank">Map It</a>
+    </div>
+<% }} %>
