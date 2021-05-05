@@ -552,6 +552,10 @@ section {
     font-size: 20px;
 }
 
+#covidtext {
+    color: #ffc451;
+}
+
 .meeting_data {
     display: flex;
     justify-content: center;
