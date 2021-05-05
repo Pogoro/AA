@@ -136,6 +136,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -284,7 +289,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Get Startet Button */
+/* Get Started Button */
 .get-started-btn {
   color: #fff;
   border-radius: 4px;
@@ -715,3 +720,4 @@ section {
   font-size: 13px;
   color: #fff;
 }
+
