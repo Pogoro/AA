@@ -547,6 +547,11 @@ section {
     font-size: 20px;
 }
 
+#week_buttons {
+    padding: 14px 40px;
+    font-size: 20px;
+}
+
 .meeting_data {
     display: flex;
     justify-content: center;
