@@ -1,13 +1,12 @@
 ## Alcoholics Anonymous
 ##### Columbus, Georgia Chapter
-
-__Authors: Ethan Dillinger, Brandon Barker, Zane Stauffer__
+###### Authors: Ethan Dillinger, Brandon Barker, Zane Stauffer
 
 Website for the local Alcoholics Anonymous chapter
 
 Heroku Link - https://pogoro-aa.herokuapp.com/
 
-To run from terminal
+###### To run from terminal
 1. npm install express
 2. node index.js
 
